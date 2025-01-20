@@ -137,7 +137,7 @@
 .section_0 .block_social .button_social:nth-child(1) span{
     width: 45px;
     height: 30px;
-    background-image: url("img/section_0/icon_vk.svg");
+    background-image: url("../../img/section_0/icon_vk.svg");
     background-size: cover;
     background-repeat: no-repeat;
     pointer-events: none;
@@ -151,7 +151,7 @@
 .section_0 .block_social .button_social:nth-child(2) span{
     width: 41px;
     height: 36px;
-    background-image: url("img/section_0/icon_tg.svg");
+    background-image: url("../../img/section_0/icon_tg.svg");
     background-size: cover;
     background-repeat: no-repeat;
     margin-right: 5px;
