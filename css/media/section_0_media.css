@@ -1,0 +1,84 @@
+@media only screen and (min-width : 1600px){
+    .section_0 .button_close {
+        width: 70px;
+        height: 70px;
+    }
+
+    .section_0 .button_close img {
+        width: 22px;
+        height: 22px;
+    }
+
+
+    .section_0 .block_logo {
+        width: 900px;
+        height: 270px;
+        margin-bottom: 20px;
+    }
+
+
+    .section_0 .block_text {
+        font-size: 23px;
+        margin-bottom: 35px;
+    }
+
+
+    .section_0 .block_social .button_social {
+        width: 90px;
+        height: 90px;
+    }
+
+    .section_0 .block_social .button_social:nth-child(1) span {
+        width: 50px;
+        height: 32px;
+    }
+
+    .section_0 .block_social .button_social:nth-child(2) span {
+        width: 45px;
+        height: 40px;
+        margin-right: 8px;
+    }
+}
+
+@media only screen and (min-width : 1800px){
+    .section_0 .button_close {
+        width: 82px;
+        height: 82px;
+        top: 52px;
+        left: 47px;
+    }
+
+    .section_0 .button_close img {
+        width: 27px;
+        height: 27px;
+    }
+
+    .section_0 .block_logo {
+        width: 1000px;
+        height: 300px;
+        margin-bottom: 22px;
+    }
+
+
+    .section_0 .block_text {
+        font-size: 26px;
+        margin-bottom: 40px;
+    }
+    
+
+    .section_0 .block_social .button_social {
+        width: 100px;
+        height: 100px;
+    }
+
+    .section_0 .block_social .button_social:nth-child(1) span {
+        width: 55px;
+        height: 35px;
+    }
+
+    .section_0 .block_social .button_social:nth-child(2) span {
+        width: 50px;
+        height: 45px;
+        margin-right: 9px;
+    }
+}

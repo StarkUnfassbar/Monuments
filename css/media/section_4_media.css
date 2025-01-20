@@ -1,0 +1,53 @@
+@media only screen and (min-width : 1800px){
+    .section_4 .block_close{
+        height: 140px;
+    }
+
+    .section_4 .block_close .button_close {
+        width: 65px;
+        height: 65px;
+    }
+
+    .section_4 .block_close .button_close img {
+        width: 22px;
+        height: 22px;
+    }
+
+
+
+    .block_list_monuments{
+        height: calc(100% - 140px);
+        top: 140px;
+    }
+
+
+    .block_list_monuments .list_element{
+        height: 160px;
+    }
+
+
+    .block_list_monuments .list_element .list_element__name span {
+        font-size: 65px;
+    }
+
+    .block_list_monuments .list_element .list_element__name h1 {
+        font-size: 65px;
+    }
+
+
+    .block_list_monuments .list_element .address {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (min-width : 1800px){
+    .section_4 .block_close .button_close {
+        width: 70px;
+        height: 70px;
+    }
+
+    .section_4 .block_close .button_close img {
+        width: 25px;
+        height: 25px;
+    }
+}
