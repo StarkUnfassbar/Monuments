@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "HeliosExt";
+    src: url("/src/font_family/heliosext/heliosext.otf") format("opentype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Heliosext";
+    src: url("/src/font_family/heliosext/heliosext_bold.otf") format("opentype");
+    font-weight: bold;
+}

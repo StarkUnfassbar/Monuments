@@ -1,0 +1,179 @@
+.section_1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 6;
+}
+
+
+
+
+.section_1 .block_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    margin-bottom: 40px;
+
+    opacity: 0;
+    transform: scale(0.3);
+    transition: transform 1s ease, opacity 2s ease;
+}
+
+.section_1._active .block_text._hidden{
+	opacity: 0;
+    transform: scale(0.3);
+}
+
+.section_1._active .block_text{
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+
+.section_1 .block_text h1{
+    width: fit-content;
+    color: transparent;
+    font-size: 55px;
+    font-weight: 700;
+    text-transform: uppercase;
+	text-align: center;
+    background: linear-gradient(to right, #FF8C00, #E34100);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 25px;
+
+    transition: all .8s ease;
+}
+
+.section_1 .block_text h1._hidden{
+	opacity: 0;
+    transform: translateY(-150px);
+}
+
+.section_1._hidden .block_text h1{
+    opacity: 0;
+    transform: translateY(-150px);
+}
+
+
+
+.section_1 .block_text p{
+    width: fit-content;
+	max-width: 900px;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 400;
+	line-height: 30px;
+	text-align: center;
+    margin-bottom: 35px;
+
+    transition: all .9s ease;
+}
+
+.section_1 .block_text p._hidden{
+    opacity: 0;
+    transform: translateY(-150px);
+}
+
+.section_1._hidden .block_text p{
+    opacity: 0;
+    transform: translateY(-150px);
+}
+
+.section_1 .block_text p:nth-child(3){
+    margin-bottom: 15px;
+    transition: all 1s ease;
+}
+
+
+
+.section_1 .block_text .button_continue{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 12px 55px;
+    box-sizing: border-box;
+    position: relative;
+
+    transition: all 1.1s ease;
+}
+
+.section_1 .block_text .button_continue._hidden{
+    opacity: 0;
+    transform: translateY(-150px);
+}
+
+.section_1._hidden .block_text .button_continue{
+    opacity: 0;
+    transform: translateY(-150px);
+}
+
+
+.section_1 .block_text .button_continue::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    border: 1px #FF8C00 solid;
+    border-radius: 22px;
+    position: absolute;
+
+    transition: all .3s ease;
+}
+
+.section_1 .block_text .button_continue:hover::before{
+    width: calc(100% - 10px);
+    height: calc(100% - 5px);
+}
+
+
+.section_1 .block_text .button_continue span{
+    color: transparent;
+    font-size: 28px;
+    font-weight: 400;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #FF8C00, #E34100);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    transition: all .3s ease;
+}
+
+
+
+
+.section_1 .button_logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 40px;
+    position: absolute;
+    bottom: 40px;
+
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all .5s ease .9s;
+}
+
+.section_1._active .button_logo{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.section_1._hidden .button_logo{
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+.section_1 .button_logo img{
+    width: 100%;
+    height: 100%;
+}

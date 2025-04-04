@@ -1,0 +1,560 @@
+.section_2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 6;
+}
+
+
+.section_2 .block_monuments{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.section_2 .block_monuments .block_monument{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.section_2 .block_monuments .block_monument._next{
+    transform: translateY(100%);
+}
+
+.section_2 .block_monuments .block_monument._prev{
+    transform: translateY(-100%);
+}
+
+
+
+.section_2 .block_monument .block_name_monument{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    top: -40px;
+    z-index: 2;
+
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+.section_2._active .block_monument._active .block_name_monument{
+    top: 50px;
+    opacity: 1;
+}
+
+.section_2._hidden .block_monument._active .block_name_monument{
+    top: -50px;
+    opacity: 0;
+}
+
+.section_2 .block_monument .block_name_monument .name_monument__set{
+    display: flex;
+    width: fit-content;
+    position: absolute;
+    top: 0;
+
+    transition: all .5s ease;
+}
+
+
+.section_2 .block_monument .block_name_monument span{
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    height: 100%;
+    color: #fff;
+    font-family: "Heliosext", sans-serif;
+    font-size: 55px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-right: 35px;
+    position: relative;
+}
+
+.section_2 .block_monument .block_name_monument span::before{
+    content: "";
+    width: 3px;
+    height: 52px;
+    border-radius: 5px;
+    background-color: #fff;
+    position: absolute;
+    right: -17px;
+}
+
+
+.section_2 .block_monument .block_name_monument h1{
+    width: fit-content;
+    color: white;
+    font-size: 55px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+
+.section_2 .block_monument .block_img{
+    display: flex;
+	justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 620px;
+    position: absolute;
+    bottom: 0;
+    pointer-events: none;
+
+    transition: bottom .5s ease .4s, opacity 1s ease .4s;
+}
+
+.section_2 .block_monument._active .block_img{
+    bottom: -15px;
+    opacity: 0;
+}
+
+.section_2._active .block_monument._active .block_img{
+    bottom: 0;
+    opacity: 1;
+}
+
+.section_2 .block_monument .block_img .img_monument__set{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 1.1s ease, opacity 1s ease;
+}
+
+.section_2._hidden .block_monument._active .block_img .img_monument__set{
+    opacity: 0 !important;
+    transform: translateY(150px) !important;
+}
+
+/* .section_2 .block_monument._active .block_img .img_monument__set:nth-child(2){
+    opacity: 0;
+    transform: translateY(100px);
+} */
+
+.section_2 .block_monument .block_img .img_monument__set img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.section_2 .block_monument .block_info{
+    display: flex;
+    position: absolute;
+    bottom: 40px;
+    left: 50px;
+    box-sizing: border-box;
+
+    opacity: 0;
+    transition: all .5s ease 1.3s;
+}
+
+.section_2._active .block_monument .block_info{
+    opacity: 1;
+}
+
+
+.section_2 .block_monument .block_info .block_address{
+    width: 350px;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 400;
+
+    transition: transform 1.8s ease, opacity 1s ease;
+}
+
+.section_2._hidden .block_monument .block_info .block_address{
+    opacity: 0;
+    transform: translateX(-200px);
+}
+
+
+
+
+.section_2 .block_buttons{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+	z-index: 50;
+	pointer-events: none;
+}
+
+
+
+.section_2 .block_buttons .block_tooltip{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #0DFF00;
+    border-radius: 18px;
+    padding: 12px 25px;
+    position: absolute;
+    box-sizing: border-box;
+    pointer-events: none;
+
+    transition: all .5s ease;
+}
+
+.section_2 .block_buttons .block_tooltip .tooltip{
+    color: transparent;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #0DFF00 34%, #027F62);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    white-space: nowrap;
+}
+
+
+
+.section_2 .block_buttons .block_buttons__left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 150px;
+    position: absolute;
+    left: 50px;
+
+    transition: all .7s ease;
+}
+
+.section_2._hidden .block_buttons .block_buttons__left{
+    opacity: 0;
+    left: -50px;
+}
+
+.section_2 .block_buttons .block_buttons__left .block_button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 62px;
+    height: 62px;
+    position: absolute;
+    cursor: pointer;
+	pointer-events: all;
+}
+
+
+.section_2 .block_buttons .block_buttons__left .block_button .block_tooltip{
+    left: 20px;
+    opacity: 0;
+}
+
+.section_2 .block_buttons .block_buttons__left .block_button:hover .block_tooltip{
+    left: 80px;
+    opacity: 1;
+}
+
+
+.section_2 .block_buttons .block_buttons__left .block_button .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+
+.section_2 .block_buttons .block_buttons__left .block_button:nth-child(1){
+    top: 0;
+
+    opacity: 0;
+    transition: all .5s ease .8s;
+}
+
+.section_2._active .block_buttons .block_buttons__left .block_button:nth-child(1){
+    opacity: 1;
+}
+
+.section_2 .block_buttons .block_buttons__left .block_button:nth-child(1) .button img{
+    width: 35px;
+    height: 35px;
+
+    transition: all .2s ease;
+}
+
+.section_2 .block_buttons .block_buttons__left .block_button:nth-child(1):hover .button img{
+    transform: rotate(90deg);
+}
+
+
+.section_2 .block_buttons .block_buttons__left .block_button:nth-child(2){
+    bottom: 0;
+
+    opacity: 0;
+    transition: all .5s ease 1.1s;
+}
+
+.section_2._active .block_buttons .block_buttons__left .block_button:nth-child(2){
+    opacity: 1;
+}
+
+.section_2 .block_buttons .block_buttons__left .block_button:nth-child(2) .button img{
+    width: 35px;
+    height: 35px;
+
+    transition: all .35s ease;
+}
+
+.section_2 .block_buttons .block_buttons__left .block_button:nth-child(2) .button img:nth-child(2){
+    width: 22px;
+    height: 22px;
+}
+
+.section_2 .block_buttons .block_buttons__left .block_button:nth-child(2):hover .button img{
+    transform: rotate(-180deg);
+}
+
+.section_2 .block_buttons .block_buttons__left .block_button:nth-child(2) .button._stop img:nth-child(1){
+    display: none;
+}
+
+.section_2 .block_buttons .block_buttons__left .block_button:nth-child(2) .button:not(._stop) img:nth-child(2){
+    display: none;
+}
+
+
+
+.section_2 .block_buttons .block_buttons__right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 270px;
+    position: absolute;
+    right: 50px;
+
+    transition: all .7s ease;
+}
+
+.section_2._hidden .block_buttons .block_buttons__right{
+    opacity: 0;
+    right: -50px;
+}
+
+.section_2 .block_buttons .block_buttons__right .block_button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 62px;
+    height: 62px;
+    position: absolute;
+    cursor: pointer;
+	pointer-events: all;
+}
+
+.section_2 .block_buttons .block_buttons__right .block_button .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+
+.section_2 .block_buttons .block_buttons__right .block_button .block_tooltip{
+    right: 20px;
+    opacity: 0;
+}
+
+.section_2 .block_buttons .block_buttons__right .block_button:hover .block_tooltip{
+    right: 80px;
+    opacity: 1;
+}
+
+
+.section_2 .block_buttons .block_buttons__right .block_button:nth-child(1){
+    top: 0;
+
+    opacity: 0;
+    transition: all .5s ease .8s;
+}
+
+.section_2._active .block_buttons .block_buttons__right .block_button:nth-child(1){
+    opacity: 1;
+}
+
+.section_2 .block_buttons .block_buttons__right .block_button:nth-child(1) .button{
+    transition: all .3s ease;
+}
+
+.section_2 .block_buttons .block_buttons__right .block_button:nth-child(1):hover .button{
+    transform: translateY(-5px);
+}
+
+.section_2 .block_buttons .block_buttons__right .block_button:nth-child(1) .button img{
+    width: 27px;
+    height: 27px;
+}
+
+
+.section_2 .block_buttons .block_buttons__right .block_button.button_info_monument{
+    width: 90px;
+    height: 90px;
+
+    opacity: 0;
+    transition: all .5s ease .95s;
+}
+
+.section_2._active .block_buttons .block_buttons__right .block_button.button_info_monument{
+    opacity: 1;
+}
+
+.section_2 .block_buttons .block_buttons__right .block_button.button_info_monument:hover .block_tooltip{
+    right: 105px;
+    opacity: 1;
+}
+
+.section_2 .block_buttons .block_buttons__right .block_button.button_info_monument .button{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    transition: all .3s ease;
+}
+
+.section_2 .block_buttons .block_buttons__right .block_button.button_info_monument:hover .button{
+    width: 80px;
+    height: 80px;
+}
+
+.section_2 .block_buttons .block_buttons__right .block_button.button_info_monument .button img{
+    width: 27px;
+    height: 27px;
+}
+
+
+.section_2 .block_buttons .block_buttons__right .block_button:nth-child(3){
+    bottom: 0;
+
+    opacity: 0;
+    transition: all .5s ease 1.1s;
+}
+
+.section_2._active .block_buttons .block_buttons__right .block_button:nth-child(3){
+    opacity: 1;
+}
+
+.section_2 .block_buttons .block_buttons__right .block_button:nth-child(3) .button{
+    transition: all .3s ease;
+}
+
+.section_2 .block_buttons .block_buttons__right .block_button:nth-child(3) .button:hover{
+    transform: translateY(5px);
+}
+
+.section_2 .block_buttons .block_buttons__right .block_button:nth-child(3) .button img{
+    width: 27px;
+    height: 27px;
+}
+
+
+
+
+.section_2 .block_logo{
+    display: flex;
+    width: 160px;
+    height: 50px;
+    position: absolute;
+    bottom: 40px;
+    right: 50px;
+
+    opacity: 0;
+    transition: all .5s ease 1.3s;
+}
+
+.section_2._active .block_logo{
+    opacity: 1;
+}
+
+.section_2 .block_logo .button_logo{
+    width: 100%;
+    height: 100%;
+
+    transition: transform 1.8s ease, opacity 1s ease;
+}
+
+.section_2._hidden .block_logo .button_logo{
+    opacity: 0;
+    transform: translateX(200px);
+}
+
+.section_2 .block_logo .button_logo img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+.section_2 .block_monument.last_text{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	z-index: 5;
+	pointer-events: none;
+	position: relative;
+}
+
+.section_2 .block_monument.last_text .last_text__container{
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	width: 900px;
+	pointer-events: all;
+}
+
+.section_2 .block_monument.last_text p{
+	width: 100%;
+	color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 400;
+	line-height: 30px;
+	text-align: center;
+}
+
+.section_2 .block_monument.last_text p a{
+	color: #1B7FF9;
+	text-decoration: none;
+	
+	transition: all .3s ease;
+}
+
+.section_2 .block_monument.last_text p a:hover{
+	text-decoration: underline;
+}

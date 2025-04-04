@@ -1,0 +1,161 @@
+@media only screen and (min-width : 1800px){
+    .section_4 .block_close{
+        height: 140px;
+    }
+
+    .section_4 .block_close .button_close {
+        width: 65px;
+        height: 65px;
+    }
+
+    .section_4 .block_close .button_close img {
+        width: 22px;
+        height: 22px;
+    }
+
+
+
+    .block_list_monuments{
+        height: calc(100% - 140px);
+        top: 140px;
+    }
+
+
+    .block_list_monuments .list_element{
+        height: 120px;
+    }
+
+
+    .block_list_monuments .list_element .list_element__name span {
+        font-size: 60px;
+    }
+
+    .block_list_monuments .list_element .list_element__name h1 {
+        font-size: 60px;
+    }
+
+
+    .block_list_monuments .list_element .address {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width : 1100px){
+	.block_list_monuments .list_element .list_element__name {
+		width: calc(100% - 200px);
+	}
+}
+
+@media only screen and (max-width : 900px){
+	.block_list_monuments .list_element .list_element__name {
+		width: calc(100% - 100px);
+	}
+
+
+	.block_list_monuments .list_element .list_element__name span {
+        font-size: 50px;
+    }
+
+    .block_list_monuments .list_element .list_element__name h1 {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width : 760px){
+	.block_list_monuments .list_element .list_element__name span {
+        margin: auto 0;
+    }
+
+
+	.section_4 .block_close {
+		height: 100px;
+		min-height: 100px;
+	}
+
+	.section_4 .block_close .button_close {
+		width: 50px;
+		height: 50px;
+	}
+
+	.section_4 .block_close .button_close img {
+		width: 15px;
+		height: 15px;
+	}
+}
+
+@media only screen and (max-width : 700px){
+	.block_list_monuments .list_element .address {
+		display: none;
+	}
+
+
+	.block_list_monuments .list_element .list_element__name span {
+        font-size: 40px;
+    }
+
+    .block_list_monuments .list_element .list_element__name h1 {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width : 600px){
+	.block_list_monuments .list_element {
+		justify-content: left;
+	}
+
+	.block_list_monuments .list_element .list_element__name {
+		width: calc(100% - 50px);
+		justify-content: left;
+	}
+}
+
+@media only screen and (max-width : 550px){
+	.section_4 .block_close {
+		height: 80px;
+		min-height: 80px;
+	}
+
+	.section_4 .block_close .button_close {
+		width: 40px;
+		height: 40px;
+	}
+
+
+	.block_list_monuments .list_element .list_element__name {
+		width: calc(100% - 40px);
+	}
+
+	.block_list_monuments .list_element .list_element__name span {
+        font-size: 30px;
+    }
+
+    .block_list_monuments .list_element .list_element__name h1 {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width : 450px){
+	.block_list_monuments .list_element .list_element__name span {
+        font-size: 28px;
+    }
+
+    .block_list_monuments .list_element .list_element__name h1 {
+        font-size: 26px;
+		margin-left: 20px;
+    }
+
+	.block_list_monuments .list_element .list_element__name h1::before{
+		left: -10px;
+	}
+}
+
+@media only screen and (max-width : 400px){
+	.block_list_monuments .list_element .list_element__name {
+		width: calc(100% - 40px);
+	}
+
+
+    .block_list_monuments .list_element .list_element__name h1 {
+        font-size: 23px;
+    }
+}
